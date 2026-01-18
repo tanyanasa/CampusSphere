@@ -39,6 +39,25 @@ def home():
 def departments():
     return render_template("departments.html")
 
+@app.route("/faculty")
+def faculty():
+    return render_template("faculty.html")
+
+
+@app.route("/examination")
+def examination():
+    return render_template("examination.html")
+
+
+@app.route("/admissions")
+def admissions():
+    return render_template("admissions.html")
+
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 
 @app.route('/register', methods=['POST'])
 def register():
