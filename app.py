@@ -32,6 +32,15 @@ conn.close()
 @app.route('/')
 def home():
     return render_template('index.html')
+    
+    @app.route("/departments")
+def departments():
+    return render_template("departments.html")
+
+@app.route("/timetable")
+def timetable():
+    return render_template("timetable.html")
+
 
 @app.route('/register', methods=['POST'])
 def register():
