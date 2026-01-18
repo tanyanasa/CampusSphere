@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusSphere</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Navigation */
+        .top-links {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .top-links span {
+            padding: 0 20px;
+            border-right: 2px solid black;
+        }
+
+        .top-links span:last-child {
+            border-right: none;
+        }
+
+        .top-links a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .top-links a:hover {
+            color: brown;
+        }
+
+        hr {
+            height: 8px;
+            background-color: #A3623A;
+            border: none;
+            margin: 20px 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        /* Form styling */
+        form {
+            width: 300px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #A3623A;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: brown;
+        }
+        form {
+    width: 360px;
+    margin: 20px auto;
+    background: #094782;
+    padding: 30px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;                 /* KEY CHANGE */
+    padding: 8px;
+    margin-top: 6px;
+    margin-left: 2.5%;          /* KEY CHANGE */
+    box-sizing: border-box;
+}
+
+button {
+    width: 95%;
+    margin-left: 2.5%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #6B91C9;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: brown;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <h1>CampusSphere</h1>
+
+    <!-- Navigation -->
+    <marquee>
+        <div class="top-links">
+            <span><a href="#home">Home</a></span>
+            <span><a href="#about">About</a></span>
+            <span><a href="#contact">Contact</a></span>
+        </div>
+    </marquee>
+
+    <hr>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h2>Welcome to CampusSphere</h2>
+        <p>
+            CampusSphere is a simple college website that helps in
+            managing student registration using a database.
+        </p>
+
+        <h3 style="text-align:center;">Student Registration Form</h3>
+
+        <!-- THIS FORM CONNECTS TO DATABASE -->
+        <form action="/register" method="post">
+            <label>Student Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Course:</label>
+            <input type="text" name="course" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About CampusSphere</h2>
+        <p>
+            CampusSphere is a web-based platform designed to manage
+            student registration and academic information efficiently.
+        </p>
+        <p>
+            It uses HTML and CSS for frontend design, Python Flask for
+            backend processing, and SQLite for database storage.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@campussphere.edu</p>
+        <p>Phone: +91 98765XXXXX</p>
+    </section>
+
+</body>
+</html>
