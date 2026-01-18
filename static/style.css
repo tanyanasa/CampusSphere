@@ -1,15 +1,5 @@
-form {
-    width: 320px;
-    margin: 20px auto;
-    background: white;
-    padding: 25px;
-    border: 2px solid black;
-    box-sizing: border-box;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
+hr {
+    border: none;
+    height: 4px;
+    background-color: #CCAA14;
 }
