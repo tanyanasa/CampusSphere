@@ -5,10 +5,17 @@
 
     <style>
         body {
-            background-color: #A3D0D4;
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+    background-color: #0F0F0F;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #EAEAEA;
+}
+input {
+    background-color: #242424;
+    color: #FFFFFF;
+    border: 1px solid #555;
+}
+
 
         h1 {
             text-align: center;
@@ -30,19 +37,20 @@
             border-right: none;
         }
 
-        .top-links a {
-            text-decoration: none;
-            color: blue;
-            font-weight: bold;
-        }
+        marquee a {
+    color: #C9A227;        /* gold */
+    font-weight: bold;
+    text-decoration: none;
+}
 
-        .top-links a:hover {
-            color: brown;
-        }
+marquee a:hover {
+    color: #FFFFFF;        /* white */
+}
+
 
         hr {
             height: 8px;
-            background-color: #CCAA14;
+            background-color: #C9A227;
             border: none;
             margin: 20px 0;
         }
@@ -55,9 +63,9 @@
         form {
             width: 300px;
             margin: auto;
-            background: white;
+            background: #5f6b6d;
             padding: 20px;
-            border: 1px solid black;
+            border: 1px solid #C9A227;
         }
 
         input, button {
@@ -79,7 +87,7 @@
         form {
     width: 360px;
     margin: 20px auto;
-    background: #094782;
+    background: #1E1E1E;
     padding: 30px;
     border: 2px solid black;
     box-sizing: border-box;
@@ -97,21 +105,21 @@ input {
     margin-top: 6px;
     margin-left: 2.5%;          /* KEY CHANGE */
     box-sizing: border-box;
-}
+
 
 button {
     width: 95%;
     margin-left: 2.5%;
     padding: 10px;
     margin-top: 15px;
-    background-color: #6B91C9;
+    background-color:  #C9A227;
     color: black;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: brown;
+    background-color:  #E1B93C;
 }
     </style>
 </head>
@@ -128,7 +136,7 @@ button:hover {
 <a href="/faculty">Faculty</a>   |
 <a href="/examination">Examination</a>   |
 <a href="/admissions">Admissions</a>   |
-<a href="/contact">Contact</a>
+<a href="#contact">Contact</a>
 </marquee>
 
 
@@ -137,13 +145,14 @@ button:hover {
 
     <!-- HOME SECTION -->
     <section id="home">
-        <h2>Welcome to CampusSphere</h2>
+        <h2 style="color: #FFFFFF;">Welcome to CampusSphere</h2>
+
         <p>
             CampusSphere is a simple college website that helps in
             managing student registration using a database.
         </p>
 
-        <h3 style="text-align:center;">Student Registration Form</h3>
+        <h3 style="text-align:center; color: #FFFFFF;", >Student Registration Form</h3>
 
         <!-- THIS FORM CONNECTS TO DATABASE -->
         <form action="/register" method="post">
@@ -176,12 +185,12 @@ button:hover {
         </p>
     </section>
 
-    <hr style="border: none; height: 4px; background-color: #CCAA14; width: 90%; margin: 20px auto;">
+    <hr style="border: none; height: 4px; background-color: white; width: 90%; margin: 20px auto;">
 
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <p>Email: info@campussphere.edu</p>
         <p>Phone: +91 98765XXXXX</p>
     </section>
