@@ -194,6 +194,24 @@ button:hover {
         <p>Email: info@campussphere.edu</p>
         <p>Phone: +91 98765XXXXX</p>
     </section>
+<script>
+    // Smooth scrolling for internal links (Contact)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Registration form confirmation
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", function () {
+            alert("Registration submitted successfully!");
+        });
+    }
+</script>
 
 </body>
 </html>
